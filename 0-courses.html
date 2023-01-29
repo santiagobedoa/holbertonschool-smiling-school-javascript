@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SmileSchool - homepage</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 viewport-fit=cover"
+    />
+    <link rel="icon" type="image/png" href="./images/favicon.ico" />
+    <link href="styles.css" rel="stylesheet" />
+    <!-- External libraries -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <main class="courses-page">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <header class="header px-5 py-5">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="mx-auto order-1">
+              <a class="navbar-brand" href="./0-homepage.html">
+                <img src="./images/smile_off.png" alt="Smile logo" />
+                <img src="./images/logo.png" alt="SmileSchool logo" />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler order-0"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse order-3"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="./0-courses.html"
+                    >COURSES
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./0-pricing.html">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >LOGIN</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <h1 class="courses-title text-center py-5 mb-0 d-none d-sm-block">
+          « Don’t cry because it’s over
+          <br /><span class="courses-title">Smile </span>because it happened. »
+        </h1>
+      </section>
+      <!-- FILTER SECTION -->
+      <section class="filter-section py-5">
+        <div class="row justify-content-around mx-5">
+          <div class="col filter-item col-lg-4 col-md-12 col-sm-12 mb-sm-4">
+            <div class="filter-name">KEYWORDS</div>
+            <div class="input-group rounded">
+              <input
+                type="Search"
+                class="form-control border-0"
+                placeholder="Search by Keyboard"
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+            </div>
+          </div>
+          <div class="col filter-item col-lg-4 col-md-6 col-sm-12 mb-sm-4">
+            <div class="filter-name">TOPIC</div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle text-left border-0"
+                type="button"
+                id="dropdownLeve"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Novice
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownLevel">
+                <a class="dropdown-item" href="#">Novice</a>
+                <a class="dropdown-item" href="#">Intermediate</a>
+                <a class="dropdown-item" href="#">Expert</a>
+              </div>
+            </div>
+          </div>
+          <div class="col filter-item col-lg-4 col-md-6 col-sm-12 mb-sm-4">
+            <div class="filter-name">SORT BY</div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle text-left border-0"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Most Popular
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Most Popular</a>
+                <a class="dropdown-item" href="#">Most Recent</a>
+                <a class="dropdown-item" href="#">Most Viewed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- RESULTS SECTION -->
+      <section class="results-section">
+        <div class="container">
+          <div class="row">
+            <div class="number-videos col-sm-12 text-dark my-4">11 videos</div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="card border-0" style="width: 100%">
+                <div class="images-reviews">
+                  <img
+                    src="./images/thumbnail_4.jpg"
+                    class="card-img-top"
+                    alt="video"
+                  />
+                  <img src="./images/play.png" class="play-image" alt="play" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark font-weight-bold">
+                    Diagonal Smile
+                  </h5>
+                  <p class="card-text text-dark">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="teacher d-flex justify-content-right">
+                    <img
+                      src="./images/profile_1.jpg"
+                      class="rounded-circle mr-3"
+                      alt="profile image"
+                    />
+                    <p>Phillip Massey</p>
+                  </div>
+                  <div class="reviews d-flex justify-space-between">
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_on.png" alt="star on" />
+                    <img src="./images/star_off.png" alt="star off" />
+                    <p>8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="pb-4">
+      <div class="row container-md px-4 mx-auto">
+        <div class="logo-container col-12 col-sm-6">
+          <img src="./images/smile_off.png" class="mr-4" alt="smile image" />
+          <img src="./images/logo.png" alt="holberton smiling school logo" />
+        </div>
+        <div class="social-media-icons col-12 col-sm-6 mt-5 mt-sm-0">
+          <div class="text-center d-flex mx-auto ml-sm-auto mr-sm-0">
+            <i class="holberton_school-icon-ic_facebook"></i>
+            <i class="holberton_school-icon-ic_twitter"></i>
+            <i class="holberton_school-icon-ic_instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">©smileschool 2020</div>
+    </footer>
+  </body>
+</html>

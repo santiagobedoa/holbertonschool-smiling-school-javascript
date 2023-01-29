@@ -1,0 +1,433 @@
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("./holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4");
+  src: url("./holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4#iefix")
+      format("embedded-opentype"),
+    url("./holberton_school-icon/fonts/holberton_school-icon.ttf?sq4eq4")
+      format("truetype"),
+    url("./holberton_school-icon/fonts/holberton_school-icon.woff?sq4eq4")
+      format("woff"),
+    url("./holberton_school-icon/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "holberton_school-icon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-arrow_1:before {
+  content: "\e900";
+}
+.holberton_school-icon-arrow_2:before {
+  content: "\e901";
+}
+.holberton_school-icon-arrow_3:before {
+  content: "\e902";
+}
+.holberton_school-icon-arrow_4:before {
+  content: "\e903";
+}
+.holberton_school-icon-arrow_5:before {
+  content: "\e904";
+}
+.holberton_school-icon-check:before {
+  content: "\e905";
+}
+.holberton_school-icon-ic_bag:before {
+  content: "\e906";
+}
+.holberton_school-icon-ic_cart:before {
+  content: "\e907";
+}
+.holberton_school-icon-ic_facebook:before {
+  content: "\e908";
+}
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+.holberton_school-icon-ic_instagram:before {
+  content: "\e90a";
+}
+.holberton_school-icon-ic_laptop:before {
+  content: "\e90b";
+}
+.holberton_school-icon-ic_money:before {
+  content: "\e90c";
+}
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+.holberton_school-icon-ic_twitter:before {
+  content: "\e90f";
+}
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+.holberton_school-icon-menu:before {
+  content: "\e911";
+}
+.holberton_school-icon-search_1:before {
+  content: "\e912";
+}
+.holberton_school-icon-search_2:before {
+  content: "\e913";
+}
+.holberton_school-icon-star:before {
+  content: "\e914";
+}
+
+* {
+  font-family: "Source sans pro", "Spin Cycle", "holberton_school-icon",
+    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: white;
+}
+
+:root {
+  --purple: #c271ff;
+  --section-padding: 90px 0px;
+  --gray: #a9a9a9;
+  --dark-blue: #071629;
+  --green: #82d24f;
+  --pale-purple-color: #d194fd;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------- HOMEPAGE ----------  */
+/*  HERO SECTION */
+.hero-section {
+  background-image: url("./images/pic_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-brand img:first-child {
+  margin-right: 1rem;
+}
+
+.navbar a {
+  color: #fff !important;
+  margin-right: 1rem;
+}
+
+.navbar a:hover {
+  opacity: 0.9 !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none !important;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 5rem auto -1rem;
+}
+
+.btn {
+  background-color: var(--purple) !important;
+}
+
+.small-title {
+  margin-top: 10rem;
+}
+
+.small-title span {
+  color: var(--purple);
+}
+
+.testimonials {
+  margin-top: 5rem;
+}
+
+.testimonials img {
+  width: 125px;
+  height: 125px;
+}
+
+/*  QUOTES SECTION */
+.quotes-section {
+  background-color: var(--purple);
+  padding: var(--section-padding);
+}
+
+.quotes-section img {
+  width: 125px;
+  height: 125px;
+}
+
+.carousel-item {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+/* TUTORIALS SECTION */
+.tutorials-section {
+  padding: var(--section-padding);
+}
+
+.section-title span {
+  color: var(--purple);
+}
+
+.carousel-videos {
+  margin-top: 5rem;
+}
+
+.card {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.play-image {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 50px;
+  left: 40%;
+}
+
+.teacher img {
+  width: 30px;
+  height: 30px;
+}
+
+.teacher p {
+  color: var(--purple);
+}
+
+.reviews img {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.reviews p {
+  color: var(--purple);
+  margin-left: auto;
+}
+
+.tutorials-section .carousel-control-prev,
+.tutorials-section .carousel-control-next {
+  background-color: var(--gray);
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+/* MEMBERSHIP SECTION */
+.membership-section {
+  background-color: var(--dark-blue);
+  padding: var(--section-padding);
+}
+
+.membership-cards-container {
+  margin-top: 5rem;
+}
+
+.card-membership {
+  background-color: var(--dark-blue) !important;
+  margin-bottom: 3rem;
+}
+
+.card-membership img {
+  width: 70px;
+  height: 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--dark-blue);
+  padding: var(--section-padding);
+}
+
+.logo-container img {
+  height: 2rem;
+}
+
+footer > div:first-child {
+  margin-bottom: 50px;
+}
+
+footer > div:last-child {
+  opacity: 35%;
+}
+
+.social-media-icons > div:first-child {
+  width: 130px;
+  max-width: 130px;
+}
+
+.social-media-icons i {
+  font-size: 30px;
+  color: white;
+  margin-right: 1rem;
+}
+
+/* PRICING PAGE */
+
+/* HERO SECTION */
+main.pricing-page .hero-section {
+  background-image: url("./images/pic_2.jpg");
+}
+
+/* NAVBAR */
+.navbar a.active {
+  color: var(--purple) !important;
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+}
+
+main.pricing-page table button {
+  width: 170px;
+}
+
+.price-title {
+  font-size: 3.5rem;
+}
+
+.price-month {
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+table p {
+  color: var(--green);
+  font-size: 28px;
+}
+
+table tbody tr:not(:last-child) {
+  border-bottom: 0.5px solid var(--gray);
+}
+
+/* FAQ SECTION */
+.faq-section {
+  padding: var(--section-padding);
+}
+
+.faq-section h2 {
+  font-size: 3.5rem;
+}
+
+.faq-section .container p {
+  color: #07162980;
+}
+
+/* COURSES PAGE */
+
+/* HERO SECTION */
+main.courses-page .hero-section {
+  background-image: url("./images/pic_3.jpg");
+}
+
+.courses-title {
+  font-size: 3.5rem;
+  font-family: Coiny !important;
+}
+
+.courses-title span {
+  color: var(--purple);
+}
+
+/* FILTER SECTION */
+.filter-section {
+  background-color: var(--purple);
+}
+
+.filter-section input {
+  background-color: var(--pale-purple-color);
+}
+
+.filter-section input::placeholder {
+  color: #fff;
+}
+
+.filter-section input:focus {
+  background-color: var(--pale-purple-color);
+}
+
+.filter-section input,
+.filter-section button {
+  width: 100%;
+  border-bottom: 0.8px solid #fff !important;
+  border-radius: 0 !important;
+}
+
+.dropdown-item:hover {
+  color: var(--purple) !important;
+}
+
+.dropdown-menu {
+  border-radius: 0 !important;
+}
+
+.filter-item button {
+  background-color: var(--pale-purple-color) !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 567px) {
+  /* FOOTER */
+  .logo-container {
+    text-align: center;
+  }
+
+  /* HOMEPAGE */
+  .play-image {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 20px;
+    left: 37%;
+  }
+
+  /* COURSES */
+  main.courses-page .images-reviews {
+    margin-right: 2rem;
+  }
+
+  main.courses-page .play-image {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 80px;
+    left: 40%;
+  }
+}
